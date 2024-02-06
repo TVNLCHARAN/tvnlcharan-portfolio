@@ -10,19 +10,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="">
     <style>
+        @media (max-width: 700px){
+            .img-div{
+                order: -1;
+                transition: 0.3s;
+            }
+            .img-div:hover{
+              transform: scale(1.05);
+            }
+            .profile{
+                align-items: center;
+                justify-content: center;
+            }
+        }
         .img-div{
-            order: -1;
-            transition: 0.3s;
+          transition: 0.3s;
         }
         .img-div:hover{
           transform: scale(1.05);
         }
-        .profile{
-            align-items: center;
-            justify-content: center;
-        }
         section{
-            margin: 60px 0px;
+          margin: 60px 0px;
         }
         .card{
           transition: 0.3s;
@@ -39,7 +47,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: black;">
       <div class="container-lg" style="box-shadow: 2px 2px 10px rgba(138, 43, 226, 0.3); height: 50px;">
         <a class="navbar-brand fw-bold" href="#" style="color: blueviolet;">Tvnl Charan</a>
-        <button class="btn search-btn d-md-none d-sm-inline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button class="btn search-btn d-md-none d-sm-inline me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(16, 16, 16); color: white;">
@@ -219,9 +227,9 @@
                     Skills
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-xl-6 col-lg-8 col-md-8 my-5 col-12">
+                    <div class="col-xl-6 col-lg-8 col-md-8 my-5 col-12" style="height: 300px;overflow: hidden;">
                         <div class="card text-bg-dark" style="box-shadow: 2px 2px 10px rgba( 255, 255, 255, 0.3);">
-                            <img src="machine-learning.jpg" class="card-img" alt="machine-learning.jpg" style="opacity: 0.4;">
+                            <img src="machine-learning.jpg" class="card-simg card-img-overlay" alt="machine-learning.jpg" style="opacity: 0.4;">
                             <div class="card-img-overlay">
                               <h5 class="card-title display-6"><code>Machine Learning</code></h5>
                               <p class="card-text text-light">
@@ -236,7 +244,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col-xl-6 col-lg-8 col-md-8 my-5 col-12">
+                    <div class="col-xl-6 col-lg-8 col-md-8 my-5 col-12" >
                         <div class="card text-bg-dark">
                             <img src="web-development.jpg" class="card-img" alt="web-development.jpg" style="opacity: 0.4;height: 300px;">
                             <div class="card-img-overlay">
