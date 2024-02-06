@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+}
+.search-btn{
+    background-color: black;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+.search-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
